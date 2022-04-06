@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <nav>
+        <div id="barra-de-navegacao">
+            <button aria-label="Abrir Menu" id="botao-tela-pequena" aria-haspopup="true" aria-controls="lista" aria-expanded="false"><span id="hamburguer"></span></button>
+            <ul id="lista" role="menu">
+                <a href="#sobre-mim" class="link-lista display-column-center"><li class="item-lista">Sobre Mim</li></a>
+                <a href="#portfolio" class="link-lista display-column-center"><li class="item-lista">Meus Projetos</li></a>
+                <a href="#contato" class="link-lista display-column-center"><li class="item-lista">Contato</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="sobre-mim" class="display-column-center">
+        <div id="texto-sobre-mim">
+            <div class="titulo">
+                <h2>Sobre mim</h2>
+            </div>
+            <div class="descricao display-column-center">
+                <p>
+                    Olá! Meu nome é Alexsander, tenho 24 anos, atualmente estou estudando desenvolvimento web, busco uma oportunidade para entrar na área e poder aprender cada vez mais.
+                </p>
+                <p>
+                    Tenho conhecimento em Html, Css, Javascript, Php, Java e Python. Pretendo aprender mais de Front-End e Back-End e me tornar um profissional cada vez melhor.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="divisao"></div>
+
+    <div id="portfolio" class="display-column-center">
+        <div>
+            <h2 class="titulo">Projetos</h2>
+        </div>
+        <div class="descricao">
+            <p>
+                Bem-vindo ao meu Portfólio, aqui estão alguns projetos que desenvolvi durante os meus estudos.
+            </p>
+        </div>
+        <div id="projetos">
+            <a href="app-help-desk.html" class="bloco-projetos">
+                <img src="img/app-help-desk.png" height="200px" width="100%" alt="Imagem projeto">
+                <h4 class="titulo-projetos sub-titulo">App Help Desk</h4>
+            </a>
+            <a href="#" class="bloco-projetos"ref="#">
+                <img src="img/app-finans.png" height="200px" width="100%" alt="Imagem projeto">
+                <h4 class="titulo-projetos sub-titulo">App Finans</h4>
+            </a>
+            <a href="#" class="bloco-projetos"ref="#">
+                <img src="img/tela-spotify.png" height="200px" width="100%" alt="Imagem projeto">
+                <h4 class="titulo-projetos sub-titulo">Site Spotify</h4>
+            </a>
+            <a href="#" class="bloco-projetos"ref="#">
+                <img src="img/app-despesa.png" height="200px" width="100%" alt="Imagem projeto">
+                <h4 class="titulo-projetos sub-titulo">App Orçamento Pessoal</h4>
+            </a>
+            <a href="#" class="bloco-projetos"ref="#">
+                <img src="img/jogo-mata-mosquito.png" height="200px" width="100%" alt="Imagem projeto">
+                <h4 class="titulo-projetos sub-titulo">Jogo Mata Mosquito</h4>
+            </a>
+            <a href="#" class="bloco-projetos">
+                <img src="img/calcula-lucro.png" height="200px" width="70%" alt="Imagem projeto">
+                <h4 class="titulo-projetos sub-titulo">Calculadora de Lucro</h4>
+            </a>
+        </div>
+    </div>
+
+    <div class="divisao"></div>
+    
+    <div id="contato" class="display-column-center">
+        <div class="titulo">
+            <h2>Contato</h2>
+        </div>
+        <div id="meus-contatos">
+            <ul id="lista-contatos">
+                <li id="celulares" class="item-contatos">
+                    <img src="img/whatsapp-icon.png" alt="Icone Whatsapp" width="30px">
+                    <a href="tel:11967080963" id="num-cel-1">(11) 96708-0963</a>
+                    <div id="linha"></div>
+                    <a href="tel:11963471405">(11) 96347-1405 (Whatsapp)</a>
+                </li>
+                <li id="campo-email" class="item-contatos">
+                    <img src="img/email.png" alt="Icone Email" width="30px">
+                    <a href="mailto:alexsanderpereir61@yahoo.com.br">alexsanderpereir61@yahoo.com.br</a>
+                </li>
+                <li id="rede-social">
+                    <a href="https://github.com/alexspereir" target="_blank"><img src="img/github.png" alt="Icone GitHub" width="40px"></a>
+                    <a href="https://www.linkedin.com/in/alexsander-freitas/"  target="_blank"><img src="img/linkedin.png" alt="Icone Linkedin" width="40px"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>

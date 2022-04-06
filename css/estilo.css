@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*  Deixar centralizado verticalmente   */
+.display-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*  Tornar Barra de navegação fixa e sobre outros componentes da página*/
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #DD0000;
+    z-index: 1;
+}
+
+#barra-de-navegacao {
+    height: 55px;    
+}
+
+#botao-tela-pequena {
+    display: none;
+    width: 50px;
+}
+
+#lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 150px;
+    height: 100%;
+}
+
+.link-lista {
+    height: 100%;
+    padding: 0 15px;
+}
+
+.link-lista:hover {
+    background-color: #FF0000;
+}
+
+.link-lista {
+    color: #FFF;
+    font-weight: 500;
+}
+
+/*  Efeito parallax */
+#sobre-mim, #portfolio, #contato {
+    position: relative;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.divisao {
+    height: 10px;
+    background-color: #555555;
+}
+
+#sobre-mim {
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../img/fundo-sobre-mim.jpg);
+    height: 100vh;
+    min-height: 600px;
+}
+
+#texto-sobre-mim {
+    margin-top: 10vh;
+    width: 650px;
+    color: #fff;
+}
+
+.titulo {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.descricao {
+    gap: 30px;
+    font-size: 20px;
+}
+
+#portfolio {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    background-color: #000;
+    padding: 50px 0 50px 0;
+    color: #FFF;
+}
+
+#portfolio .descricao {
+    text-align: center;
+    margin: 0 20px;
+}
+
+#contato {
+    background-color: #000;
+    height: 50vh;
+}
+
+#projetos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 25px 50px 0 50px;
+    max-width: 1799px;
+}
+
+.bloco-projetos {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #FFF;
+    width: 420px;
+    height: 250px;
+    box-shadow: 0px 1px 3px 1px rgb(255 255 255);
+    padding: 10px;
+}
+
+.bloco-projetos:hover {
+    box-shadow: 0px 1px 5px 5px rgb(14, 70, 255);
+}
+
+.sub-titulo {
+    color: #000;
+    text-decoration: underline;
+}
+
+#contato {
+    color: #fff;
+    align-items: center;
+}
+
+#num-cel-1 {
+    margin-right: 25px;
+}
+
+.item-contatos {
+    display: flex;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+.item-contatos > a {
+    margin-left: 20px;
+    color: #FFF;
+}
+
+#linha {
+    height: 30px;
+    width: 1px;
+    background-color: #FFF;
+}
+
+#campo-email {
+    justify-content: center;
+}
+
+#rede-social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (max-width: 475px) {
+    #projetos {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bloco-projetos {
+        width: 310px;
+    }
+
+    #contato {
+        min-height: 370px;
+    }
+
+    #celulares, #campo-email {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #celulares {
+        margin-bottom: 10px;
+    }
+
+    .item-contatos > a, #num-cel-1 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #linha {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #sobre-mim {
+        background-image: none;
+        background-color: #000;
+        height: auto;
+        padding-bottom: 25px;
+    } 
+    
+    #texto-sobre-mim {
+        margin-top: 25px;
+        width: 90vw;
+    }
+
+    #barra-de-navegacao {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #lista {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 55px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    #barra-de-navegacao.active #lista {
+        display: block;
+    }
+
+    .link-lista {
+        background-color: rgba(221, 0, 0, 0.9);
+        border-bottom: 2px solid rgb(255, 0, 0);
+    }
+
+    #botao-tela-pequena {
+        display: flex;
+        padding: 20px 15px;
+        margin-right: 15px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer {
+        display: block;
+        border-top: 3px solid;
+        color: #000;
+        width: 25px;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .4s;
+    }
+
+    #barra-de-navegacao.active #hamburguer {
+        border-top: none;
+    }
+
+    #barra-de-navegacao.active #hamburguer::after {
+        transform: rotate(135deg);
+        top: -8px;
+        width: 35px;
+    }
+
+    #barra-de-navegacao.active #hamburguer::before {
+        transform: rotate(-135deg);
+        width: 35px;
+    }
+}
+
+@media (max-height: 625px) {
+    #sobre-mim {
+        background-image: none;
+        background-color: #000;
+    }
+
+    #contato {
+        min-height: 300px;
+    }
+}
